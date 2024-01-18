@@ -5,7 +5,6 @@ import axios from 'axios';
 function App() {
   const [city, setCity] = useState('Tbilisi');
   const [state1,setState1] = useState('')
-  const [state2,setState2] = useState('')
   const [state3,setState3] = useState('')
   const [state4,setState4] = useState('')
   const [state5,setState5] = useState('')
@@ -16,7 +15,6 @@ function App() {
       .then((res) => {
         console.log(res.data)
         setState1(res.data.wind.speed)
-        setState2(res.data.sys.country)
         setState3(res.data.main.humidity)
         setState4(res.data.main.temp_max)
         setState5(res.data.clouds.all)
@@ -47,7 +45,6 @@ function App() {
         <h1 className='temp'>{state4}°</h1>
         <div className="rame">
           <h1 className='cityname'>{city}</h1>
-          <h2 className='date'>06:09 - Monday, 9 Sep ‘23</h2>
         </div>
         <img src="new.svg" alt="" />
       </div>
