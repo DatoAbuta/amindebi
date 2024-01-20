@@ -7,10 +7,13 @@
 }
 
 body{
-  background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+  background-color: lightgray;
   height: 100vh;
-  background: url(./bg-weather.svg), lightgray 50% / cover no-repeat;
   background-size: cover;
+  background-image: url(/assets/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 header{
